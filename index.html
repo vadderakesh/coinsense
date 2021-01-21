@@ -1,0 +1,59 @@
+<html>
+<head>
+    <Title>Welcome to CoinSense</Title>
+    <script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+ </script>
+    <link rel="stylesheet" type="text/css" href="extra.css"/>
+</head>
+<body>
+<br><br>
+<p id="heading" align="center">Coinsense, Crypto made simple</p>
+<br>
+<table align="center">
+    <tr>
+        <th id="cryptoHeading">CryptoCoin</th>
+        <th>&nbsp;&nbsp;</th>
+        <th id="currencyHeading">Currency</th>
+    </tr>
+    <tr>
+        <th><br></th>
+        <th><br></th>
+        <th><br></th>
+    <tr>
+        <td>
+            <label for="crypto">
+                <select id="crypto">
+                    <option value="bitcoin">Bitcoin(BTC)</option>
+                    <option value="ethereum">Ethereum(ETH)</option>
+                    <option value="litecoin">Litecoin(LTC)</option>
+                    <option value="bitcoin-cash">Bitcoin Cash(BCH)</option>
+                    <option value="tron">Tron(TRX)</option>
+                    <option value="ripple">Ripple(XRP)</option>
+                </select>
+            </label>
+        </td>
+        <td>&nbsp;&nbsp;</td>
+        <td>
+            <label for="currency">
+                <select id="currency">
+                    <option value="inr">Indian Rupees(INR)</option>
+                    <option value="usd">US Dollar(USD)</option>
+                    <option value="eur">European Euro(EUR)</option>
+
+                </select>
+            </label>
+        </td>
+    </tr>
+</table>
+<br><br><br><br>
+<div align="center">
+    <button type="button" onclick="perform()" id="button">Fetch Price</button>
+    <br>
+    <p id="output"></p>
+    <script src="main.js" type="text/javascript"></script>
+</div>
+</body>
+</html>
